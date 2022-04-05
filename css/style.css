@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --primaryColor: #ffffff;
+  --secundaryColor: #000000;
+  --terciaryColor: #cccccc;
+  --spacing: calc(13.33% - 2vw);
+}
+body,html {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(26, 27, 28, 1) 100%
+  );
+  font-family: 'Inter', sans-serif;
+  color: var(--primaryColor);
+  scroll-behavior: smooth;
+}
+.d-flex{
+  display:flex;
+  flex-direction:column;
+}
+i{
+  position:relative;
+  background:black;
+  width:22px;
+  height:22px;
+}
+.center {
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header{
+    position: fixed;
+    text-transform: uppercase;
+    left:0%;
+    right:0%;
+    padding:1% 0;
+    margin:0; 
+    z-index: 2;
+}
+header a {
+    color:white;
+}
+header a:not(.btn-acesse)::after {
+    transition: all ease-in-out 0.2s;
+    background: none repeat scroll 0 0 #ffffff;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    margin: 5% 0;
+  }
+  header a:hover::after {
+    width: 100%;
+  }
+  
+header ul ,li{
+    gap: 20%;
+    display: flex;
+    flex-direction: row;
+}
+
+.pageContainer {
+  /* background: blue; */
+  height: 100vh;
+  padding: 1vw calc(var(--spacing) / 5);
+  position:relative;
+}
+.pageContainer > .containHeader {
+  display: grid;
+  place-items: center;
+}
+.logo {
+  position: fixed;
+  width: calc(3% + 5vw);
+  height: calc(3% + 5vw);
+  background: orange;
+  display:grid;
+  place-items: center;
+}
+.containHeader {
+  position: relative;
+  background: gray;
+  width: 33%;
+  height: 33%;
+  padding: 10% 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 2% 2%;
+}
+.containHeader .titleLeft {
+  background: blue;
+  text-align: left;
+}
+.containHeader .titlebottom {
+  background: blue;
+  text-align: right;
+}
+.navIcons {
+  position: fixed;
+  top: 90%;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: calc(3% + 5vw);
+}
+.navIcons > * {
+  gap: 5%;
+}
+.pageContainer:nth-child(2) {
+  background: blueviolet;
+  flex-direction: column;
+}
+.containImgs:not(h1) {
+  background: teal;
+  height: 33.33%;
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 20%;
+}
+strong {
+  color: var(--primaryColor);
+}
+.pageContainer:nth-child(2) span {
+  background: red;
+  max-width: 40%;
+  text-align: center;
+}
+.pageContainer:nth-child(3){
+    background:olive;
+    padding: 0 var(--spacing);
+}
+.pageContainer:nth-child(4){ 
+    background:green;
+    padding: 0 var(--spacing);
+}
+
+.spanDesc{
+  max-width: 300px;
+background:purple;
+}
+.gridPortfolio {
+  /* background: teal; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr); 
+  height:auto;
+  margin:auto auto; 
+  gap: 2%;
+  
+}
+.gridPortfolio .gridItem {
+  background: teal;
+  padding: 2vw;
+  border: 1px solid red;
+  display: grid;
+  place-items: center;
+}
+
+
+.gridItem:nth-child(1) { grid-area: 1 / 1 / 3 / 2; }
+.gridItem:nth-child(2) { grid-area: 1 / 2 / 2 / 3; }
+.gridItem:nth-child(3) { grid-area: 1 / 3 / 2 / 4; }
+.gridItem:nth-child(4) { grid-area: 2 / 2 / 3 / 3; }
+.gridItem:nth-child(5) { grid-area: 2 / 3 / 3 / 4; }
+.gridItem:nth-child(6) { grid-area: 2 / 4 / 3 / 5; }
+.gridItem:nth-child(7) { grid-area: 1 / 4 / 2 / 5; }
+.gridItem:nth-child(8) { grid-area: 1 / 5 / 3 / 6; }
+
+.containerSkills{
+background:rebeccapurple;
+display: flex;
+gap:40%;
+}
+.skill:nth-child(2){
+    margin:10% 0 0 0;
+    background:red;
+    max-width: 20%;
+}
+.skill:nth-child(2) ul {
+    background:blue;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-end;
+    justify-content:flex-end;
+}
+.pageContainer:nth-child(5){ 
+  background:red;
+  padding: 0 var(--spacing);
+}
+.btnScroll{
+  padding:2vh; 
+  position:absolute;
+  left:50%;
+  right:0;
+  top:90%;
+}
