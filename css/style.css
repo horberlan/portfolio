@@ -84,7 +84,7 @@ header ul ,li{
   position: fixed;
   width: calc(3% + 5vw);
   height: calc(3% + 5vw);
-  background: orange;
+  /* background: orange; */
   display:grid;
   place-items: center;
 }
@@ -99,17 +99,17 @@ header ul ,li{
   padding: 2% 2%;
 }
 .containHeader .titleLeft {
-  background: blue;
+  /* background: blue; */
   text-align: left;
 }
 .containHeader .titlebottom {
-  background: blue;
+  /* background: blue; */
   text-align: right;
 }
 .navIcons {
   position: fixed;
   top: 90%;
-  background-color: orange;
+  /* background-color: orange; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -119,11 +119,11 @@ header ul ,li{
   gap: 5%;
 }
 .pageContainer:nth-child(2) {
-  background: blueviolet;
+  /* background: blueviolet; */
   flex-direction: column;
 }
 .containImgs:not(h1) {
-  background: teal;
+  /* background: teal; */
   height: 33.33%;
   width: 33%;
   display: flex;
@@ -135,22 +135,22 @@ strong {
   color: var(--primaryColor);
 }
 .pageContainer:nth-child(2) span {
-  background: red;
+  /* background: red; */
   max-width: 40%;
   text-align: center;
 }
 .pageContainer:nth-child(3){
-    background:olive;
+    /* background:olive; */
     padding: 0 var(--spacing);
 }
 .pageContainer:nth-child(4){ 
-    background:green;
+    /* background:green; */
     padding: 0 var(--spacing);
 }
 
 .spanDesc{
   max-width: 300px;
-background:purple;
+/* background:purple; */
 }
 .gridPortfolio {
   /* background: teal; */
@@ -163,9 +163,9 @@ background:purple;
   
 }
 .gridPortfolio .gridItem {
-  background: teal;
+  /* background: teal; */
   padding: 2vw;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: grid;
   place-items: center;
 }
@@ -181,24 +181,24 @@ background:purple;
 .gridItem:nth-child(8) { grid-area: 1 / 5 / 3 / 6; }
 
 .containerSkills{
-background:rebeccapurple;
+/* background:rebeccapurple; */
 display: flex;
 gap:40%;
 }
 .skill:nth-child(2){
     margin:10% 0 0 0;
-    background:red;
+    /* background:red; */
     max-width: 20%;
 }
 .skill:nth-child(2) ul {
-    background:blue;
+    /* background:blue; */
     display:flex;
     flex-direction:column;
     align-items: flex-end;
     justify-content:flex-end;
 }
 .pageContainer:nth-child(5){ 
-  background:red;
+  /* background:red; */
   padding: 0 var(--spacing);
 }
 .btnScroll{
